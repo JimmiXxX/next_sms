@@ -1,0 +1,97 @@
+.footer_content{
+    background: var(--text_gray_clr);
+    padding: 60px 120px;
+    margin-top: 100px;
+}
+
+.content{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text_white_clr);
+}
+
+.first_Block_Footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 220px;
+    justify-content: space-between;
+}
+
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu_footer h4{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer_logo{
+    position: relative;
+    top: -20px;
+    left: -5px;
+    background: url("../../../../public/images/footerLogo.png");
+    height: 100px;
+    width: 300px;
+    background-size: cover;
+}
+
+.contacts_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts_footer h4{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.icon_content{
+    display: flex;
+    align-self: end;
+    flex-wrap: wrap-reverse;
+    width: 115px;
+    gap: 20px;
+}
+
+.telegram{
+    background: url("../../../../public/images/telegram.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.instagram{
+    background: url("../../../../public/images/inst.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+.whatsapp{
+    background: url("../../../../public/images/whatsapp.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.viber{
+    background: url("../../../../public/images/wiber.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.vk{
+    background: url("../../../../public/images/vk.png");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
