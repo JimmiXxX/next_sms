@@ -1,0 +1,63 @@
+.logo
+{
+    background: url("logosms.png");
+    background-size: cover;
+    width: 187px;
+    height: 70px;
+    margin-left: 35px;
+
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--gray);
+    opacity: 0.8;
+    display: flex;
+    height: 80px;
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+}
+.header_links
+{
+    display: flex;
+    gap: 20px;
+}
+
+.links
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+.navBar
+{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-right: 40px;
+
+    @media screen and (max-width: 920px) {
+        display: none;
+    }
+}
+
+.header_button
+{
+    padding: 12px 40px;
+    border: 2px solid var(--white);
+}
+
+.header_button:hover
+{
+    background: var(--white);
+    border: 2px solid var(--gray);
+    color: var(--gray);
+}

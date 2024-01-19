@@ -1,0 +1,92 @@
+.blog_content
+{
+    position: relative;
+    background: var(--gray);
+    padding: 60px;
+    height: 630px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.blog_content h2:before
+{
+    content: '{';
+    margin-right: 5px;
+}
+.blog_content h2:after
+{
+    content: '}';
+    margin-left: 5px;
+}
+
+.blog{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #F3F4F9;
+    z-index: 10;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blogInfo
+{
+    display: flex;
+    gap: 60px;
+}
+
+.blog_text{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    gap: 20px;
+}
+
+.text_content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 300px;
+    color: #F3F4F9;
+
+}
+
+.blog_firstImg{
+    background: url('../../../../public/images/BLOG1.png');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.blog_secondImg{
+    background: url('../../../../public/images/BLOG2.png');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.blog_threeImg{
+    background: url('../../../../public/images/BLOG3.png');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.blogLine{
+    background: url("../../../../public/images/BlogLine.png");
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 448px;
+    width: 1160px;
+    z-index: 1;
+}

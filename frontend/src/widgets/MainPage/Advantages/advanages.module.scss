@@ -1,0 +1,123 @@
+.firstBlockContent
+{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.secondBlockContent
+{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 120px;
+}
+
+.firstImgContent
+{
+    position: relative;
+}
+
+.textImgContent
+{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    color: var(--white);
+    text-transform: lowercase;
+}
+
+.textImgContent:before
+{
+    content: '{';
+    padding-right: 5px;
+}
+.textImgContent:after
+{
+    content: '}';
+    padding-left: 5px;
+}
+
+.imgBlock
+{
+    background: url("../../../public/images/FirstMainPhoto.png");
+    background-size: cover;
+    width: 480px;
+    height: 470px;
+}
+
+.bgBlockAdvantages
+{
+
+    background: var(--gray);
+    height: 225px;
+}
+
+.gapBlock
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+}
+
+.h3
+{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.h4
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    font-weight: 300;
+    color: var(--white);
+    padding-right: 150px;
+}
+
+.secondImgContent
+{
+    background: url("../../../public/images/SecondMainPhoto.png");
+    width: 440px;
+    height: 740px;
+    background-size: cover;
+}
+
+.firstLine
+{
+    background: url("../../../public/images/FirstLineMainBlock.png");
+    width: 524px;
+    height: 224px;
+    z-index: 1;
+    position: absolute;
+}
+
+.secondLine
+{
+    background: url("../../../public/images/SecondLineMainBlock.png") no-repeat;
+    width: 700px;
+    height: 210px;
+    z-index: 1;
+    top: 40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.threeLine
+{
+    background: url("../../../public/images/ThreeLineMainBlock.png");
+    width: 638px;
+    height: 224px;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
