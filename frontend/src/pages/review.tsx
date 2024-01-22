@@ -1,5 +1,5 @@
-import { Wrapper } from "../shared/wrapper/wrapper";
-import { Header } from "../widgets/MainPage/header/header";
+import { Wrapper } from "@/shared/wrapper/wrapper";
+import { Header } from "@/widgets/header/header";
 
 const Review = () => {
     return (

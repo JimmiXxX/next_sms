@@ -1,6 +1,6 @@
-import { Header } from "../widgets/MainPage/header/header";
-import { Wrapper } from "../shared/wrapper/wrapper";
-import { Footer } from "../widgets/MainPage/footer/footer";
+import { Header } from "@/widgets/header/header";
+import { Wrapper } from "@/shared/wrapper/wrapper";
+import { Footer } from "@/widgets/footer/footer";
 
 const Blog = () => {
     return (

@@ -1,4 +1,4 @@
-import { Header } from "../widgets/MainPage/header/header";
+import { Header } from "@/widgets/header/header";
 
 const Studio = () => {
     return (

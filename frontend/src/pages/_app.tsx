@@ -1,6 +1,6 @@
-import '../app/styles/global.scss'
-import '../app/styles/reset.scss'
-import '../app/styles/__vars.scss'
+import '@/app/styles/global.scss'
+import '@/app/styles/reset.scss'
+import '@/app/styles/__vars.scss'
 
 
 

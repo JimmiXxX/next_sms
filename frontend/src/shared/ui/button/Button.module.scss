@@ -1,8 +1,6 @@
 .btn{
     border: 1px solid var(--white);
-    color: var(--white);
     align-self: center;
-    background: transparent;
     padding: 30px 40px;
     font-weight: 500;
     font-size: 20px;
@@ -29,19 +27,7 @@
     }
 }
 
-.white{
-    border: 1px solid var(--white);
-    background: transparent;
-    color: var(--white);
-    padding: 30px 40px;
-
-    &:hover{
-        background: var(--white);
-        color: var(--gray)
-    }
-}
-
-.btn_gray{
+.btn_white{
     background: transparent;
     color: var(--white);
 
@@ -50,8 +36,18 @@
         color: var(--gray);
     }
 }
+.btn_gray{
+    background: transparent;
+    color: var(--gray);
+    border-color: var(--gray);
 
-.btn_white{
+    &:hover{
+        background: var(--gray);
+        color: var(--white);
+    }
+}
+
+.btn_bg_white{
     background-color: var(--white);
     color: var(--gray);
 
@@ -69,3 +65,4 @@
         border: 1px solid var(--gray);
     }
 }
+

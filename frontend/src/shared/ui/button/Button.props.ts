@@ -10,6 +10,6 @@ export interface ButtonProps
         HTMLButtonElement
     > {
     children: ReactNode
-    color?: 'gray' | 'white' | 'btn_gray' | 'btn_white' | 'btn_bg_gray' | 'btn'
+    color?: 'gray' | 'white' | 'btn_gray' | 'btn_white' | 'btn_bg_gray' | 'btn' | 'btn_bg_white'
     disabled?: boolean
 }

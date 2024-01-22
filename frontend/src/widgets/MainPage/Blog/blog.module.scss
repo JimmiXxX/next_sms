@@ -2,7 +2,6 @@
 {
     position: relative;
     background: var(--gray);
-    padding: 60px;
     height: 630px;
     margin-top: 120px;
     margin-bottom: 20px;
@@ -25,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    color: #F3F4F9;
+    color: var(--white);
     z-index: 10;
 }
 
@@ -42,10 +41,19 @@
 }
 
 .blog_text{
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     width: 900px;
     gap: 20px;
+}
+
+.ImgText{
+    height: 270px;
+}
+
+.btn{
+    margin-bottom: 60px;
 }
 
 .text_content{
@@ -53,14 +61,14 @@
     flex-direction: column;
     gap: 50px;
     width: 300px;
-    color: #F3F4F9;
+    color: var(--white);
 
 }
 
 .blog_firstImg{
     background: url('../../../../public/images/BLOG1.png');
     background-size: cover;
-    width: 300px;
+    width: 287px;
     height: 200px;
     margin-bottom: 20px;
 }
@@ -68,7 +76,7 @@
 .blog_secondImg{
     background: url('../../../../public/images/BLOG2.png');
     background-size: cover;
-    width: 300px;
+    width: 287px;
     height: 200px;
     margin-bottom: 20px;
 }
@@ -79,6 +87,10 @@
     width: 300px;
     height: 200px;
     margin-bottom: 20px;
+}
+
+.date{
+    font-weight: 500;
 }
 
 .blogLine{

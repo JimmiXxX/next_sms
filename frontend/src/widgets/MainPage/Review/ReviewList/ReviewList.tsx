@@ -1,8 +1,9 @@
 import styles from "../review.module.scss";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const ReviewList = ( props ) => {
 
     return (
-        <h4 className={ styles.h4 }>{props.title.title}</h4>
+        <Htag tag={'text'} color={'var(--gray)'} className={styles.Htag}>{props.title.title}</Htag>
     )
 }

@@ -1,6 +1,7 @@
 import styles from "./aboutUs.module.scss"
-import { Wrapper } from "../../shared/wrapper/wrapper";
-import { Button } from "../../shared/ui/button/Button";
+import { Button } from "@/shared/ui/button/Button";
+import { Htag } from "@/shared/ui/Htag/Htag";
+import { Wrapper } from "@/shared/wrapper/wrapper";
 
 export const AboutUs = () => {
 
@@ -9,14 +10,14 @@ export const AboutUs = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.firstBlock}>
-                        <h3 className={styles.h3}>О студии</h3>
-                        <h4 className={styles.h4}>Мы заботимся о Вашем комфорте и хотим, чтобы посещение нашей студии приносило Вам только положительные эмоции</h4>
-                        <Button color={"gray"}>Узнать о нас</Button>
+                        <Htag tag={'h3Main'} color={'var(--gray)'}>о студии</Htag>
+                        <Htag tag={'text'} color={'var(--gray)'} className={styles.aboutTag}>Мы заботимся о Вашем комфорте и хотим, чтобы посещение нашей студии приносило Вам только положительные эмоции</Htag>
+                        <Button color={"btn_gray"} className={styles.btn}>Узнать о нас</Button>
                     </div>
 
                     <div className={styles.secondBlock}>
-                        <h2 className={styles.h2}>Для наших мастеров главное</h2>
-                        <h2 className={styles.h2}><i>– это <span>довольный гость</span></i></h2>
+                        <Htag tag={'h2'} color={'var(--gray)'} className={styles.h2}>Для наших мастеров главное</Htag>
+                        <Htag tag={'h2Bold'} color={'var(--gray)'} className={styles.Htag}>– это довольный гость</Htag>
                         <div className={styles.imgFlex}>
                             <div className={styles.firstImgAboutUs}></div>
                             <div className={styles.imgFlexSecondBlock}>

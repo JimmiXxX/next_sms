@@ -1,5 +1,6 @@
 import styles from "./work.module.scss"
-import { Wrapper } from "../../../shared/wrapper/wrapper";
+import { Wrapper } from "@/shared/wrapper/wrapper";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const Work = (props) => {
 
@@ -7,8 +8,9 @@ export const Work = (props) => {
         <Wrapper>
             <div className={styles.content}>
                 <div className={styles.firstImgBlock}>
-                    <div className={styles.firstImg}></div>
-                    <h3 className={styles.h3}>Наши работы</h3>
+                    <div className={styles.firstImg}>
+                        <Htag tag={'h3Main'} color={'var(--white)'}>наши работы</Htag>
+                    </div>
                 </div>
                 <div>
                     <div className={styles.twoImgBlock}>

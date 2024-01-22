@@ -1,6 +1,7 @@
 import styles from "./blog.module.scss"
 import Link from "next/link";
-import { Button } from "../../../shared/ui/button/Button";
+import { Button } from "@/shared/ui/button/Button";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const Blog = () => {
 
@@ -16,32 +17,32 @@ export const Blog = () => {
         <div className={ styles.blog_content }>
             <div className={ styles.blog }>
                 <div className={ styles.blogInfo }>
-                    <h2>блог</h2>
+                    <Htag tag={'h3Main'} color={'var(--white)'}>блог</Htag>
                     <div className={ styles.blog_text }>
                         <div className={ styles.text_content }>
-                            <Link href={'/blog'}>
+                            <Link href={'/blog'} className={styles.ImgText}>
                                 <div className={styles.blog_firstImg}></div>
-                                <div>Как выбрать дизайн?</div>
+                                <Htag tag={'text'} color={'var(--white)'}>Как выбрать дизайн?</Htag>
                             </Link>
-                            <div>{ date }</div>
+                            <Htag tag={'text'} color={'var(--white)'} className={styles.date}>{ date }</Htag>
                         </div>
                         <div className={ styles.text_content }>
-                            <Link href={'/blog'}>
+                            <Link href={'/blog'} className={styles.ImgText}>
                                 <div className={styles.blog_secondImg}></div>
-                                <div>Топ-мастер, мастер или ...?</div>
+                                <Htag tag={'text'} color={'var(--white)'}>Топ-мастер, мастер или ...?</Htag>
                             </Link>
-                            <div>{ date }</div>
+                            <Htag tag={'text'} color={'var(--white)'} className={styles.date}>{ date }</Htag>
                         </div>
                         <div className={ styles.text_content }>
-                            <Link href={'/blog'}>
+                            <Link href={'/blog'} className={styles.ImgText}>
                                 <div className={styles.blog_threeImg}></div>
-                                <div>Как мы стерилизуем инструменты?</div>
+                                <Htag tag={'text'} color={'var(--white)'}>Как мы стерилизуем инструменты?</Htag>
                             </Link>
-                            <div>{ date }</div>
+                            <Htag tag={'text'} color={'var(--white)'} className={styles.date}>{ date }</Htag>
                         </div>
                     </div>
                 </div>
-                <Button color={"gray"}>Читать блог</Button>
+                <Button color={"gray"} className={styles.btn}>Читать блог</Button>
             </div>
             <div className={styles.blogLine}></div>
         </div>

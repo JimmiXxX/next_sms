@@ -18,6 +18,7 @@ export const Button = ( {
             [styles.btn_gray]: color === 'btn_gray',
             [styles.btn_white]: color === 'btn_white',
             [styles.btn_bg_gray]: color === 'btn_bg_gray',
+            [styles.btn_bg_white]: color === 'btn_bg_white',
             [styles.btn]: color === 'btn',
         })}
         disabled={disabled}
