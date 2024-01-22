@@ -1,49 +1,71 @@
 .btn{
-    border: 1px solid var(--btn_white_hover);
-    color: var(--btn_white_clr);
+    border: 1px solid var(--white);
+    color: var(--white);
     align-self: center;
     background: transparent;
     padding: 30px 40px;
     font-weight: 500;
     font-size: 20px;
+
+    &:disabled{
+        cursor: not-allowed;
+    }
 }
 
 .btn:hover{
-    background: var(--btn_white_clr);
-    color: var(--btn_gray_clr);
+    background: var(--white);
+    color: var(--gray);
 }
 
-.black_btn{
-    border: 1px solid var(--btn_gray_clr);
-    color: var(--btn_gray_clr);
-    align-self: center;
+.gray{
+    border: 1px solid var(--white);
     background: transparent;
+    color: var(--white);
     padding: 30px 40px;
-    font-weight: 500;
-    font-size: 20px;
+
+    &:hover{
+        background: var(--white);
+        color: var(--gray)
+    }
 }
 
-.black_btn:hover{
-    background: var(--btn_gray_hover);
-    color: var(--btn_white_hover);
-}
-
-.black_btn:disabled{
-    cursor: not-allowed;
-    pointer-events: all;
-}
-
-.grayBtn{
-    background: var(--btn_white_clr);
-    color: var(--btn_gray_clr);
-    padding: 30px 40px;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.grayBtn:hover{
+.white{
+    border: 1px solid var(--white);
     background: transparent;
-    border: 1px solid var(--btn_white_hover);
-    color: var(--btn_white_hover);
+    color: var(--white);
+    padding: 30px 40px;
+
+    &:hover{
+        background: var(--white);
+        color: var(--gray)
+    }
 }
 
+.btn_gray{
+    background: transparent;
+    color: var(--white);
+
+    &:hover{
+        background: var(--white);
+        color: var(--gray);
+    }
+}
+
+.btn_white{
+    background-color: var(--white);
+    color: var(--gray);
+
+    &:hover{
+        background: transparent;
+        color: var(--white)
+    }
+}
+
+.btn_bg_gray{
+    background: var(--gray);
+    color: var(--white);
+    &:hover{
+        background: transparent;
+        border: 1px solid var(--gray);
+    }
+}
