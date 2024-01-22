@@ -1,6 +1,7 @@
 import styles from "./training.module.scss"
-import { Wrapper } from "../../shared/wrapper/wrapper";
-import { Button } from "../../shared/ui/button/Button";
+import { Wrapper } from "@/shared/wrapper/wrapper";
+import { Button } from "@/shared/ui/button/Button";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const Training = () => {
 
@@ -8,10 +9,12 @@ export const Training = () => {
         <Wrapper>
             <div className={styles.container}>
                 <div className={styles.firstBlockContent}>
-                    <h3 className={styles.h3}>Обучение</h3>
-                    <h2 className={styles.h2}>Обучение <br/><i>мастеров</i></h2>
-                    <h4 className={styles.h4}>Мы постоянно обучаем наших мастеров в лучших школах.</h4>
-                    <Button color={'btn_bg_gray'}>Узнать подробнее</Button>
+                    <Htag tag={'h3Main'} color={'var(--gray)'}>обучение</Htag>
+                    <Htag tag={'h2'} color={'var(--gray)'} className={styles.Htag}>Обучение <br/>
+                        <Htag tag={'h2Bold'} color={'var(--gray)'}>мастеров</Htag>
+                    </Htag>
+                    <Htag tag={'text'} color={'var(--gray)'} className={styles.HtagText}>Мы постоянно обучаем наших мастеров в лучших школах.</Htag>
+                    <Button color={'btn_gray'} className={styles.btn}>Узнать подробнее</Button>
                 </div>
                 <div className={styles.imgBlock}></div>
             </div>

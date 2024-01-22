@@ -1,7 +1,7 @@
 .container
 {
     display: flex;
-    margin-top: 120px;
+    margin-top: 60px;
     z-index: 10;
     position: relative;
     justify-content: space-between;
@@ -12,52 +12,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: self-start;
 }
 
-.h3
-{
-    color: #838798;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: lowercase;
+.Htag{
+    margin-left: 60px;
 }
 
-.h3:before
-{
-    content: '{';
-    padding-right: 5px;
-}
-.h3:after{
-    content: '}';
-    padding-left: 5px;
+.HtagText{
+    width: 380px;
+    margin-left: 60px;
 }
 
-.h2
-{
-    font-size: 48px;
-    color: #838798;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.h2 i{
-    font-weight: 500;
-    font-style: normal;
-}
-
-.h4
-{
-    color: #838798;;
-    font-weight: 300;
-    line-height: 140%;
-    font-size: 20px;
-    width: 350px;
+.btn{
+    align-self: start;
+    margin-left: 60px;
 }
 
 .imgBlock
 {
-    background: url("../../../public/images/imgTraining.png");
+    background: url("../../../../public/images/imgTraining.png") no-repeat;
+    margin-top: 60px;
     width: 660px;
     height: 630px;
     background-size: cover;

@@ -3,9 +3,8 @@
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px solid #838798;
+    border: 1px solid var(--gray);
     margin-top: 60px;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -17,9 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 90px;
-    margin-top: 60px;
-    margin-left: 60px;
-    width: 440px;
+    //width: 440px;
     margin-bottom: 60px;
 
 }
@@ -27,7 +24,7 @@
 .subtitle
 {
     margin-top: 60px;
-    margin-right: 150px;
+    //margin-right: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +39,7 @@
 {
     font-size: 20px;
     font-weight: 400;
-    color: #838798;
+    color: var(--gray);
     text-transform: lowercase;
 }
 
@@ -62,12 +59,15 @@
 {
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
 }
 
 .link
 {
     padding: 20px 10px;
-    color: #838798;
+    margin-right: 100px;
+    color: var(--gray);
+    width: 440px;
     font-weight: 300;
     font-size: 20px;
     transition: 0.3s;
@@ -75,61 +75,26 @@
 
 .link:hover
 {
-    background: #838798;
-    color: #F3F4F9;
+    background: var(--gray);
+    color: var(--white);
 }
 
 .link:nth-child(-n + 5)
 {
-    border-bottom: 1px solid #838798;
+    border-bottom: 1px solid var(--gray);
 }
 .link:nth-child(-n + 5):hover
 {
-    border-bottom: 2px solid #F3F4F9;
+    border-bottom: 2px solid var(--white);
 }
 
-.headerOffer
-{
-    display: flex;
-    flex-wrap: wrap;
-    color: #838798;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -2.64px;
-    text-transform: uppercase;
-    width: 400px;
-}
-
-.headerOffer i
-{
-    font-style: normal;
-    font-weight: 500;
-}
-
-.button
-{
-    padding: 28px 40px;
-    background: none;
-    border: 1px solid #838798;
-    color: #838798;
-    font-size: 20px;
-}
 
 .bgLine
 {
     position: absolute;
-    background: url("../../../public/images/lineServiceBlock.png") repeat;
+    background: url("../../../../public/images/lineServiceBlock.png") repeat;
     width: 100%;
     height: 758px;
     top: -10vh;
     z-index: -10;
-}
-
-.button:hover
-{
-    background: #838798;
-    border: 1px solid #F3F4F9;
-    color: #F3F4F9;
 }

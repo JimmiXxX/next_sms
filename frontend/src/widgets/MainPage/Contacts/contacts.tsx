@@ -1,20 +1,21 @@
 import styles from "./contacts.module.scss"
 import { useEffect , useState } from "react";
 import axios from 'axios'
-import { Validation } from "../../../shared/validation/validation";
-import { Button } from "../../../shared/ui/button/Button";
+import { Validation } from "@/shared/validation/validation";
+import { Button } from "@/shared/ui/button/Button";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 
 export const Contacts = () => {
 
 
-    const [inputValueName , setInputValueName] = useState ('')
-    const [inputValueTel , setInputValueTel] = useState ('')
-    const [inputDirtyName , setInputDirtyName] = useState (false)
-    const [inputDirtyTel , setInputDirtyTel] = useState (false)
-    const [inputErrorName , setInputErrorName] = useState ('Имя не может быть пустым!')
-    const [inputErrorTel , setInputErrorTel] = useState ('Номер телефона не может быть пустым!')
-    const [validateForm , setValidateForm] = useState (false)
+    const [inputValueName , setInputValueName] = useState<string> ('')
+    const [inputValueTel , setInputValueTel] = useState<string> ('')
+    const [inputDirtyName , setInputDirtyName] = useState<boolean> (false)
+    const [inputDirtyTel , setInputDirtyTel] = useState<boolean> (false)
+    const [inputErrorName , setInputErrorName] = useState<string> ('Имя не может быть пустым!')
+    const [inputErrorTel , setInputErrorTel] = useState<string> ('Номер телефона не может быть пустым!')
+    const [validateForm , setValidateForm] = useState<boolean> (false)
 
     useEffect (() => {
         (inputErrorTel || inputErrorName) ? setValidateForm (false) : setValidateForm (true)
@@ -72,9 +73,10 @@ export const Contacts = () => {
     }
 
     return (
+
         <div className={ styles.contacts }>
             <div className={ styles.border_content }>
-                <h2>контакты</h2>
+                <Htag tag={'h3Main'} color={'var(--gray)'}>контакты</Htag>
                 <div className={ styles.contacts_content }>
                     <form action='http://localhost:3002/api/sendEmail' method={ 'POST' }>
                         { (inputDirtyName && inputErrorName) && <Validation>{ inputErrorName }</Validation> }
@@ -102,11 +104,11 @@ export const Contacts = () => {
                             onClick={ prevent }
                         >Забронировать время</Button>
                     </form>
-                    <p className={ styles.text }>нажимая на кнопку, Вы соглашаетесь с политикой конфиденциальности</p>
+                    <Htag tag={'text'} color={'var(--gray)'} className={styles.Htag}>нажимая на кнопку, Вы соглашаетесь с политикой конфиденциальности</Htag>
                 </div>
             </div>
             <div className={ styles.text_img_content }>
-                <h3>мы работаем <br/> чтобы осуществить <br/><i>ваши мечты <br/>о красоте <br/> и здоровье</i></h3>
+                <Htag tag={'h2'} color={'var(--gray)'}>мы работаем <br/> чтобы осуществить <br/><Htag tag={'h2Bold'}>ваши мечты <br/>о красоте <br/> и здоровье</Htag></Htag>
                 <div className={ styles.imgIcon }>
                     <div className={ styles.firstImg }></div>
                     <div className={ styles.secondImg }></div>

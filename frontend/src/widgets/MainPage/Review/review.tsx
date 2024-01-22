@@ -1,12 +1,13 @@
 import styles from "./review.module.scss"
-import { Wrapper } from "../../../shared/wrapper/wrapper";
+import { Wrapper } from "@/shared/wrapper/wrapper";
 import { ReviewList } from "./ReviewList/ReviewList";
-import { articleList } from "../../../entities/Article";
+import { articleList } from "@/entities/Article";
 import { useState } from "react";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const Review = () => {
 
-    const [articleIdx , SetArticleIdx] = useState (0)
+    const [articleIdx , SetArticleIdx] = useState<number> (0)
 
     const RightHandler = () => {
         if (articleList.items.length % 2 === 1)
@@ -30,7 +31,7 @@ export const Review = () => {
             <div className={ styles.container }>
                 <div className={ styles.content }>
                     <div className={ styles.firstBlock }>
-                        <h3 className={ styles.h3 }>Отзывы</h3>
+                        <Htag tag={'h3Main'} color={'var(--white)'}>отзывы</Htag>
                         <div className={ styles.navButton }>
                             <button onClick={ LeftHandler } className={ styles.reviewButton }>&#8592;</button>
                             <button onClick={ RightHandler } className={ styles.reviewButton }>&#8594;</button>

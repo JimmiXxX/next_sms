@@ -1,27 +1,32 @@
 import styles from "./advanages.module.scss"
-import { Wrapper } from "../../shared/wrapper/wrapper";
+import { Wrapper } from "@/shared/wrapper/wrapper";
+import { Htag } from "@/shared/ui/Htag/Htag";
 
 export const Advantages = () => {
     return (
         <Wrapper>
             <div className={ styles.firstBlockContent }>
                 <div className={ styles.firstImgContent }>
-                    <div className={ styles.textImgContent }>Преимущества</div>
-                    <div className={ styles.imgBlock }></div>
+
+                    <div className={ styles.imgBlock }>
+                        <Htag tag={ 'h3Main' } color={ 'var(--white)' }>преимущества</Htag>
+                    </div>
                 </div>
                 <div className={ styles.gapBlock }>
                     <div className={ styles.bgBlockAdvantages }>
                         <div className={ styles.firstLine }></div>
-                        <div className={ styles.h3 }>Гибкий график</div>
-                        <div className={ styles.h4 }>Для экономии времени гостя студия предоставляет предоставляет
+                        <Htag tag={ 'h3' } color={ 'var(--white)' }>Гибкий график</Htag>
+                        <Htag tag={ 'text' } color={ 'var(--white)' } className={styles.Htag}>Для экономии времени гостя студия предоставляет
+                            предоставляет
                             услугу “Сет в 4 руки”
-                        </div>
+                        </Htag>
                     </div>
                     <div className={ styles.bgBlockAdvantages }>
-                        <div className={ styles.h3 }>Качество</div>
-                        <div className={ styles.h4 }>Наша студия работает только с качественными материалами и
+                        <Htag tag={ 'h3' } color={ 'var(--white)' }>Качество</Htag>
+                        <Htag tag={ 'text' } color={ 'var(--white)' } className={styles.Htag}>Наша студия работает только с качественными
+                            материалами и
                             современным оборудованием
-                        </div>
+                        </Htag>
                     </div>
                 </div>
             </div>
@@ -29,24 +34,27 @@ export const Advantages = () => {
 
                 <div className={ styles.gapBlock }>
                     <div className={ styles.bgBlockAdvantages }>
-                        <div className={ styles.h3 }>Профессионализм</div>
-                        <div className={ styles.h4 }>Все мастера студии – сертифицированные специалисты, имеющие большой
+                        <Htag tag={ 'h3' } color={ 'var(--white)' }>Профессионализм</Htag>
+                        <Htag tag={ 'text' } style={{width: 600, color: "var(--white)"}} className={styles.Htag}>Все мастера студии – сертифицированные
+                            специалисты, имеющие большой
                             опыт работы и постоянно повышающие квалификацию
-                        </div>
-                        <div className={styles.secondLine}></div>
+                        </Htag>
+                        <div className={ styles.secondLine }></div>
                     </div>
                     <div className={ styles.bgBlockAdvantages }>
-                        <div className={ styles.h3 }>Стерилизация</div>
-                        <div className={ styles.h4 }>Мы используем одноразовые расходники и тщательно следим за
+                        <Htag tag={ 'h3' } color={ 'var(--white)' }>Стерилизация</Htag>
+                        <Htag tag={ 'text' } color={ 'var(--white)' } className={styles.Htag}>Мы используем одноразовые расходники и тщательно
+                            следим за
                             соблюдением норм СанПиНа
-                        </div>
+                        </Htag>
                     </div>
                     <div className={ styles.bgBlockAdvantages }>
-                        <div className={ styles.h3 }>Клиентоориентированность</div>
-                        <div className={ styles.h4 }>К каждому нашему гостю мы пододим индивидуально, учитывая все
+                        <Htag tag={ 'h3' } color={ 'var(--white)' }>Клиентоориентированность</Htag>
+                        <Htag tag={ 'text' } color={ 'var(--white)' } className={styles.Htag}>К каждому нашему гостю мы пододим индивидуально,
+                            учитывая все
                             пожелания и особенности
-                        </div>
-                        <div className={styles.threeLine}></div>
+                        </Htag>
+                        <div className={ styles.threeLine }></div>
                     </div>
                 </div>
                 <div>
